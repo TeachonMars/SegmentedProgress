@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SegmentedProgressDefault">
+        <item name="nbSection">@integer/segmentedProgressDefaults_nbSection</item>
+        <item name="colorEmpty">@color/segmentedProgressDefaults_colorEmpty</item>
+    </style>
+</resources>

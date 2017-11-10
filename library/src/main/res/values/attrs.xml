@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="segmentedProgressStyle" />
+    <attr name="segmentedProgressStyle_stateShowFront" />
+    <attr name="segmentedProgressStyle_stateShowBack" />
+
+    <attr name="progress" format="integer" />
+    <attr name="nbSection" format="integer" />
+    <attr name="colorEmpty" format="color" />
+
+    <declare-styleable name="SegmentedProgress">
+        <attr name="progress" />
+        <attr name="nbSection" />
+        <attr name="colorEmpty" />
+        <attr name="android:src" />
+    </declare-styleable>
+</resources>
