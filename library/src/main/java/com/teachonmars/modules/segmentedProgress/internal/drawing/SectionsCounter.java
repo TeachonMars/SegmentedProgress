@@ -40,4 +40,14 @@ public class SectionsCounter {
         showCount = calculateFuturCount(progressPercent);
         return showCount;
     }
+
+    public void setNbSection(int nbSection) {
+        if (nbSection < 1) {
+            nbSection = 1;
+        }
+        if (showCount > nbSection) {
+            showCount = nbSection;
+        }
+        this.nbSection = nbSection;
+    }
 }

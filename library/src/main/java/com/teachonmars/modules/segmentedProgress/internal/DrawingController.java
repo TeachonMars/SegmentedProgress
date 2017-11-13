@@ -145,4 +145,13 @@ public class DrawingController {
     public float getProgress() {
         return sectionsCounter.getShowCount() / sectionsCounter.getCount();
     }
+
+    public int getShowCount() {
+        return sectionsCounter.getShowCount();
+    }
+
+    public void setNbSection(int nbSection) {
+        sectionsCounter.setNbSection(nbSection);
+        view.requestLayout();
+    }
 }

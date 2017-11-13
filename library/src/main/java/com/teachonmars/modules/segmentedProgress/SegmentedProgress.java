@@ -94,4 +94,12 @@ public class SegmentedProgress extends View {
     public float getProgress() {
         return drawingController.getProgress();
     }
+
+    public void setNbSection(int nbSection) {
+        drawingController.setNbSection(nbSection);
+    }
+
+    public int getShowCount() {
+        return drawingController.getShowCount();
+    }
 }

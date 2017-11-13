@@ -15,18 +15,46 @@ import static com.teachonmars.modules.segmentedProgress.appDemo.R.id.progressVie
 public class MainActivity extends AppCompatActivity {
 
     int duration = 2000;
-    private SeekBar seek;
     private ArrayList<SegmentedProgress> seeklisteners = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initSeek();
+        initControllers();
         initProgress(progressView);
         initProgress(R.id.progressView2);
         initProgressAuto(R.id.progressView3);
         initProgressAuto(R.id.progressView4);
+    }
+
+    private void initControllers() {
+        initProgressSeek();
+        initNbSectionSeek();
+    }
+
+    private void initNbSectionSeek() {
+        SeekBar nbSectionSeek = findViewById(R.id.nbSection);
+        float currentValue = ((SegmentedProgress) findViewById(R.id.progressView)).getShowCount();
+        nbSectionSeek.setProgress((int) currentValue);
+        nbSectionSeek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int nbSection, boolean fromUser) {
+                for (SegmentedProgress seeklistener : seeklisteners) {
+                    seeklistener.setNbSection(nbSection);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
     private void initProgress(int progressViewId) {
@@ -41,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
         progressView.postDelayed(buildAutoChanger(progressView), duration);
     }
 
-    private void initSeek() {
-        seek = findViewById(R.id.seek);
+    private void initProgressSeek() {
+        SeekBar seek = findViewById(R.id.progress);
         seek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
