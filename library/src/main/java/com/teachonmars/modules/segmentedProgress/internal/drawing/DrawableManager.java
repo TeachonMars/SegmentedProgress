@@ -2,6 +2,7 @@ package com.teachonmars.modules.segmentedProgress.internal.drawing;
 
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.drawable.ClipDrawable;
 import android.graphics.drawable.Drawable;
@@ -30,8 +31,8 @@ public class DrawableManager {
         this.view = view;
     }
 
-    public void loadFromResources(TypedArray a) {
-        backgroundColor = a.getColor(R.styleable.SegmentedProgress_colorEmpty, 0);
+    public void loadFromResources(TypedArray a, boolean inEditMode) {
+        backgroundColor = !inEditMode ? a.getColor(R.styleable.SegmentedProgress_colorEmpty, 0) : Color.GRAY;
         preventInvalidation = true;
         retrieveImageDrawable(a, R.styleable.SegmentedProgress_android_src);
         preventInvalidation = false;

@@ -42,7 +42,7 @@ public class SegmentedProgress extends View {
 
     private void initFromAttrs(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SegmentedProgress, defStyleAttr, defStyleRes);
-        drawingController.loadFromResources(a);
+        drawingController.loadFromResources(a, isInEditMode());
         a.recycle();
     }
 

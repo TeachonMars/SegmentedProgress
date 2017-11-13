@@ -19,8 +19,12 @@ public class SectionsCounter {
         return showCount;
     }
 
-    public void loadFromResources(TypedArray a) {
-        this.nbSection = a.getInt(R.styleable.SegmentedProgress_nbSection, R.integer.segmentedProgressDefaults_nbSection);
+    public void loadFromResources(TypedArray a, boolean inEditMode) {
+        if (!inEditMode) {
+            this.nbSection = a.getInt(R.styleable.SegmentedProgress_nbSection, R.integer.segmentedProgressDefaults_nbSection);
+        } else {
+            this.nbSection = 5;
+        }
     }
 
     int calculateFuturCount(float progressPercent) {
@@ -29,7 +33,7 @@ public class SectionsCounter {
     }
 
     void setShowCount(int showCount) {
-        this.showCount = showCount<=nbSection?showCount:nbSection;
+        this.showCount = showCount <= nbSection ? showCount : nbSection;
     }
 
     public int setProgress(float progressPercent) {

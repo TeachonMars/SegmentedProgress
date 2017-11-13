@@ -24,9 +24,9 @@ public class DrawingController {
         animationManager = new AnimationManager(drawableManager, sectionsCounter);
     }
 
-    public void loadFromResources(TypedArray a) {
-        sectionsCounter.loadFromResources(a);
-        drawableManager.loadFromResources(a);
+    public void loadFromResources(TypedArray a, boolean inEditMode) {
+        sectionsCounter.loadFromResources(a, inEditMode);
+        drawableManager.loadFromResources(a, inEditMode);
     }
 
     public void setImageDrawable(Drawable drawable) {
