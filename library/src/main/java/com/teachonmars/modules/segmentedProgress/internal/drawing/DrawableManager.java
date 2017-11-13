@@ -2,7 +2,6 @@ package com.teachonmars.modules.segmentedProgress.internal.drawing;
 
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.drawable.ClipDrawable;
 import android.graphics.drawable.Drawable;
@@ -24,18 +23,18 @@ public class DrawableManager {
     private SegmentedProgress view;
     private StateListDrawable stateDrawable;
     private boolean           preventInvalidation;
-    private int backgroundColor = Color.BLUE;
-    private ClipDrawable progressDrawable;
+    private int               backgroundColor;
+    private ClipDrawable      progressDrawable;
 
     public DrawableManager(SegmentedProgress view) {
         this.view = view;
     }
 
     public void loadFromResources(TypedArray a) {
+        backgroundColor = a.getColor(R.styleable.SegmentedProgress_colorEmpty, 0);
         preventInvalidation = true;
         retrieveImageDrawable(a, R.styleable.SegmentedProgress_android_src);
         preventInvalidation = false;
-        backgroundColor = a.getColor(R.styleable.SegmentedProgress_colorEmpty,Color.GRAY);
     }
 
     public void draw(Canvas canvas) {
