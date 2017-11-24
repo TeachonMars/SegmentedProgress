@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="segmentedProgressStyle" />
+    <attr name="segmentedProgressStyle"  format="reference"/>
     <attr name="segmentedProgressStyle_stateShowFront" />
     <attr name="segmentedProgressStyle_stateShowBack" />
 

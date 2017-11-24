@@ -1,4 +1,4 @@
-package com.teachonmars.modules.segmentedProgress.internal.drawing;
+package com.teachonmars.modules.widget.segmentedProgress.internal.drawing;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -8,7 +8,7 @@ import android.animation.ValueAnimator;
 import android.graphics.drawable.ClipDrawable;
 import android.graphics.drawable.Drawable;
 
-import com.teachonmars.modules.segmentedProgress.SegmentedProgress;
+import com.teachonmars.modules.widget.segmentedProgress.SegmentedProgress;
 
 import java.util.ArrayList;
 

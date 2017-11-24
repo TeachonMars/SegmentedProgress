@@ -1,4 +1,4 @@
-package com.teachonmars.modules.segmentedProgress;
+package com.teachonmars.modules.widget.segmentedProgress;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,8 +10,8 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.teachonmars.modules.segmentedProgress.internal.DrawingController;
-import com.teachonmars.modules.segmentedProgress.internal.ViewMeasurer;
+import com.teachonmars.modules.widget.segmentedProgress.internal.DrawingController;
+import com.teachonmars.modules.widget.segmentedProgress.internal.ViewMeasurer;
 
 public class SegmentedProgress extends View {
     private DrawingController drawingController;

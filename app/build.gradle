@@ -6,7 +6,7 @@ android {
     buildToolsVersion androidBuildTools
 
     defaultConfig {
-        applicationId "com.teachonmars.modules.${pomArtifactId}.appDemo"
+        applicationId "com.teachonmars.modules.widget.${pomArtifactId}.appDemo"
         minSdkVersion androidMinSdk
         targetSdkVersion androidTargetSdk
         versionCode 1

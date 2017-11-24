@@ -25,10 +25,5 @@ dependencies {
 
 }
 
-ext {
-    pomArtifactId = 'segmentedProgress'
-    pomPackaging = 'aar'
-}
-//
-//apply from: "${rootProject.projectDir}/scripts/install.gradle"
-//apply from: "${rootProject.projectDir}/scripts/bintray.gradle"
+apply from: "${rootProject.projectDir}/scripts/installNew.gradle"
+apply from: "${rootProject.projectDir}/scripts/bintray.gradle"

@@ -1,15 +1,13 @@
-package com.teachonmars.modules.segmentedProgress.appDemo;
+package com.teachonmars.modules.widget.segmentedProgress.appDemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.SeekBar;
 
-import com.teachonmars.modules.segmentedProgress.SegmentedProgress;
+import com.teachonmars.modules.widget.segmentedProgress.SegmentedProgress;
 
 import java.util.ArrayList;
 import java.util.Random;
-
-import static com.teachonmars.modules.segmentedProgress.appDemo.R.id.progressView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initControllers();
-        initProgress(progressView);
+        initProgress(R.id.progressView);
         initProgress(R.id.progressView2);
         initProgressAuto(R.id.progressView3);
         initProgressAuto(R.id.progressView4);

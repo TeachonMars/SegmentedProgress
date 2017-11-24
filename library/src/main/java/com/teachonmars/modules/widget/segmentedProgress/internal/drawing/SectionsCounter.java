@@ -1,8 +1,8 @@
-package com.teachonmars.modules.segmentedProgress.internal.drawing;
+package com.teachonmars.modules.widget.segmentedProgress.internal.drawing;
 
 import android.content.res.TypedArray;
 
-import com.teachonmars.modules.segmentedProgress.R;
+import com.teachonmars.modules.widget.segmentedProgress.R;
 
 public class SectionsCounter {
     private int nbSection;

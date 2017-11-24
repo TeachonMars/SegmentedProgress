@@ -33,12 +33,12 @@ ext {
     pomArtifactId = 'segmentedProgress'
     pomName = 'SegmentedProgress'
 
-    pomDescription = 'A widget to show a custom progress bar, composed of same adjacent animated vector drawable'
+    pomDescription = 'A widget to show a custom progress bar, composed of same adjacent drawable'
 
     siteUrl = 'https://github.com/TeachonMars/SegmentedProgress'
     gitUrl = 'https://github.com/TeachonMars/SegmentedProgress.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.1.0'
 
     developerId = 'benjaminVadon'
     developerName = 'Benjamin Vadon'

@@ -1,4 +1,4 @@
-package com.teachonmars.modules.segmentedProgress.internal;
+package com.teachonmars.modules.widget.segmentedProgress.internal;
 
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -6,10 +6,10 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.support.v4.view.ViewCompat;
 
-import com.teachonmars.modules.segmentedProgress.SegmentedProgress;
-import com.teachonmars.modules.segmentedProgress.internal.drawing.AnimationManager;
-import com.teachonmars.modules.segmentedProgress.internal.drawing.DrawableManager;
-import com.teachonmars.modules.segmentedProgress.internal.drawing.SectionsCounter;
+import com.teachonmars.modules.widget.segmentedProgress.SegmentedProgress;
+import com.teachonmars.modules.widget.segmentedProgress.internal.drawing.AnimationManager;
+import com.teachonmars.modules.widget.segmentedProgress.internal.drawing.DrawableManager;
+import com.teachonmars.modules.widget.segmentedProgress.internal.drawing.SectionsCounter;
 
 public class DrawingController {
     private final DrawableManager   drawableManager;

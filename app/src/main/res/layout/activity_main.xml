@@ -27,26 +27,26 @@
         android:layout_height="wrap_content"
         android:max="10" />
 
-    <com.teachonmars.modules.segmentedProgress.SegmentedProgress
+    <com.teachonmars.modules.widget.segmentedProgress.SegmentedProgress
         android:id="@+id/progressView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_line_24dp" />
 
-    <com.teachonmars.modules.segmentedProgress.SegmentedProgress
+    <com.teachonmars.modules.widget.segmentedProgress.SegmentedProgress
         android:id="@+id/progressView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher" />
 
-    <com.teachonmars.modules.segmentedProgress.SegmentedProgress
+    <com.teachonmars.modules.widget.segmentedProgress.SegmentedProgress
         android:id="@+id/progressView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:src="@mipmap/ic_launcher" />
 
-    <com.teachonmars.modules.segmentedProgress.SegmentedProgress
+    <com.teachonmars.modules.widget.segmentedProgress.SegmentedProgress
         android:id="@+id/progressView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

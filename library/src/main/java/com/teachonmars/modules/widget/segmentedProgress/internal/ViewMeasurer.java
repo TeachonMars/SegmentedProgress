@@ -1,9 +1,10 @@
-package com.teachonmars.modules.segmentedProgress.internal;
+package com.teachonmars.modules.widget.segmentedProgress.internal;
 
 import android.graphics.Rect;
 import android.view.View.MeasureSpec;
 
-import com.teachonmars.modules.segmentedProgress.SegmentedProgress;
+import com.teachonmars.modules.widget.segmentedProgress.SegmentedProgress;
+
 
 public class ViewMeasurer {
     private final SegmentedProgress view;

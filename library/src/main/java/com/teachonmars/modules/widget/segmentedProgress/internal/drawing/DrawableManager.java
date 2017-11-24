@@ -1,4 +1,4 @@
-package com.teachonmars.modules.segmentedProgress.internal.drawing;
+package com.teachonmars.modules.widget.segmentedProgress.internal.drawing;
 
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -13,8 +13,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v4.view.GravityCompat;
 
-import com.teachonmars.modules.segmentedProgress.R;
-import com.teachonmars.modules.segmentedProgress.SegmentedProgress;
+import com.teachonmars.modules.widget.segmentedProgress.SegmentedProgress;
+import com.teachonmars.modules.widget.segmentedProgress.R;
 
 import static android.os.Build.VERSION.SDK_INT;
 
