@@ -22,8 +22,6 @@ dependencies {
     compile 'org.jetbrains:annotations-java5:15.0'
     compile "com.android.support:support-annotations:${depsAndroidSupport}"
     compile "com.android.support:support-compat:${depsAndroidSupport}"
-
 }
 
-apply from: "${rootProject.projectDir}/scripts/installNew.gradle"
-apply from: "${rootProject.projectDir}/scripts/bintray.gradle"
+apply from: "${rootProject.projectDir}/scripts/publish.gradle"

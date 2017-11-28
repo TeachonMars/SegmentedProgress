@@ -1,16 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-
     compileSdkVersion androidCompileSdk
     buildToolsVersion androidBuildTools
 
     defaultConfig {
-        applicationId "com.teachonmars.modules.widget.${pomArtifactId}.appDemo"
         minSdkVersion androidMinSdk
         targetSdkVersion androidTargetSdk
         versionCode 1
         versionName libraryVersion
+        applicationId "com.teachonmars.modules.widget.${pomArtifactId}.appDemo"
     }
     buildTypes {
         release {
