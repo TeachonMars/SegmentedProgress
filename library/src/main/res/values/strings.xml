@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Segmentedprogress</string>
+    <string name="error_needAnimatedVector">Need an animated Vector Drawable</string>
+</resources>

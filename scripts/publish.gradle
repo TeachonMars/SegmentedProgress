@@ -1,0 +1,16 @@
+["pom", "package", "bintray"]
+        .each {
+    scriptName ->
+        apply from: "${rootProject.projectDir}/scripts/${scriptName}.gradle"
+}
+
+task publishBintray(group: "publish") {
+    dependsOn 'clean'
+    dependsOn "${project.path}:assembleRelease"
+    dependsOn "${project.path}:bintrayUpload"
+}
+
+task publishLocal(group: "publish") {
+    dependsOn "${project.path}:build"
+    dependsOn "${project.path}:install"
+}
