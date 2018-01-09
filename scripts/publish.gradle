@@ -4,13 +4,14 @@
         apply from: "${rootProject.projectDir}/scripts/${scriptName}.gradle"
 }
 
-task publishBintray(group: "publish") {
-    dependsOn 'clean'
-    dependsOn "${project.path}:build"
-    dependsOn "${project.path}:bintrayUpload"
+task publishLocal(group: "publish") {
+    dependsOn "${project.path}:clean"
+    dependsOn "${project.path}:install"
+    tasks.getByPath("${project.path}:install").mustRunAfter "${project.path}:clean"
 }
 
-task publishLocal(group: "publish") {
-    dependsOn "${project.path}:build"
-    dependsOn "${project.path}:install"
+task publishBintray(group: "publish") {
+    dependsOn publishLocal
+    dependsOn bintrayUpload
+    bintrayUpload.mustRunAfter publishLocal
 }
