@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SegmentedProgress.iml" filepath="$PROJECT_DIR$/SegmentedProgress.iml" />
       <module fileurl="file://$PROJECT_DIR$/appDemo/app.iml" filepath="$PROJECT_DIR$/appDemo/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appDemo/appDemo.iml" filepath="$PROJECT_DIR$/appDemo/appDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
